@@ -31,7 +31,9 @@ def load_data(data_path):
 
 # Loading data
 if 'df' not in st.session_state:
-	st.session_state['df'], st.session_state['meta'] = load_data('data/SUZANNA_2022_rec.sav')
+	st.session_state['df1'], st.session_state['meta'] = load_data('data/part1_file.sav')
+	st.session_state['df2'], st.session_state['meta'] = load_data('data/part2_file.sav')
+	st.session_state['df'] = pd.concat([st.session_state.df1, st.session_state.df2], ignore_index=True)
 
 	# Changing label for sector mobility
 	st.session_state.df.HA03 = ['Mobilität' if value.startswith('Mobilität') else value for value in st.session_state.df.HA03]
