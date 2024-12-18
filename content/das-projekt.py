@@ -26,7 +26,7 @@ col1, col2, col3, col4 = st.columns([0.95, 0.65, 0.5, 0.5])
 with col1:
     st.info('Hierzu haben wir eine sozialwissenschaftliche Analyse durchgeführt, in der die Einstellungen der Bürger*innen in Bezug auf ein gutes und ressourenschonendes Leben ermittelt wurden.')
 with col2:
-    st.info('Darauf aufbauend haben wir Suffizienz-fördernde Angebotsmodelle ermittelt und mit Praxisbeispielen hinterlegt')
+    st.info('Darauf aufbauend haben wir Suffizienz-fördernde Angebotsmodelle ermittelt und mit Praxisbeispielen hinterlegt.')
 with col3:
     st.info('Wir haben untersucht, wie der Rahmen für Suffizienz verbessert werden kann.')
 with col4:
