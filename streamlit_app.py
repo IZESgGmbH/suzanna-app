@@ -3,13 +3,13 @@ import pandas as pd
 import pyreadstat
 
 # Setting and configuring pages
-p1 = st.Page('content\die-app.py', title='Die App')
-p2 = st.Page('content\das-projekt.py', title='Das SUZANNA-Projekt')
-p3 = st.Page('content\projektinformationen.py', title='Weitere Projektinformationen')
-p4 = st.Page('content\ergebnisse-allgemein.py', title='Allgemein')
-p5 = st.Page('content\ergebnisse-spezifisch.py', title='Handlungsfelder')
-p6 = st.Page('content\ergebnisse-milieus.py', title='Milieus')
-p7 = st.Page('content\steckbriefe.py', title='Steckbriefe')
+p1 = st.Page('content/die-app.py', title='Die App')
+p2 = st.Page('content/das-projekt.py', title='Das SUZANNA-Projekt')
+p3 = st.Page('content/projektinformationen.py', title='Weitere Projektinformationen')
+p4 = st.Page('content/ergebnisse-allgemein.py', title='Allgemein')
+p5 = st.Page('content/ergebnisse-spezifisch.py', title='Handlungsfelder')
+p6 = st.Page('content/ergebnisse-milieus.py', title='Milieus')
+p7 = st.Page('content/steckbriefe.py', title='Steckbriefe')
 pg = st.navigation({
 	'Hintergrund': [p1, p2, p3],
 	'Ergebnisse der Befragung': [p4, p5, p6],
