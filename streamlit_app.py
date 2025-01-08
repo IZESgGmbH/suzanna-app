@@ -10,6 +10,7 @@ p4 = st.Page('content/ergebnisse-allgemein.py', title='Allgemein')
 p5 = st.Page('content/ergebnisse-spezifisch.py', title='Handlungsfelder')
 p6 = st.Page('content/ergebnisse-milieus.py', title='Milieus')
 p7 = st.Page('content/steckbriefe.py', title='Steckbriefe')
+
 pg = st.navigation({
 	'Hintergrund': [p1, p2, p3],
 	'Ergebnisse der Befragung': [p4, p5, p6],
@@ -22,6 +23,9 @@ st.set_page_config(page_title='Suzanna',
 
 # Inserting logo
 st.logo('images/logo.png', size='large')
+
+# Information in sidebar
+st.sidebar.html('<small><em>Letzte Aktualisierung: Januar 2025</em></small>')
 
 # Defining function for loading data
 @st.cache_data
